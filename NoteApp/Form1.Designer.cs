@@ -77,6 +77,7 @@
             // 
             // previousNotes
             // 
+            this.previousNotes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.previousNotes.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.previousNotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.previousNotes.GridColor = System.Drawing.SystemColors.ActiveCaption;
@@ -85,6 +86,7 @@
             this.previousNotes.RowTemplate.Height = 25;
             this.previousNotes.Size = new System.Drawing.Size(330, 344);
             this.previousNotes.TabIndex = 4;
+            this.previousNotes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.previousNotes_CellDoubleClick);
             // 
             // loadNote
             // 
